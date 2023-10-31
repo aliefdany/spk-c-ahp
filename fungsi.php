@@ -31,7 +31,7 @@ function getAlternatifID($no_urut) {
 // mencari nama kriteria
 function getKriteriaNama($no_urut) {
 	include('config.php');
-	$query  = "SELECT nama FROM kriteria ORDER BY id";
+	$query  = "SELECT nama FROM kriteria WHERE id > 34 ORDER BY id";
 	$result = mysqli_query($koneksi, $query);
 
 	while ($row = mysqli_fetch_array($result)) {
@@ -93,7 +93,7 @@ function getJumlahAlternatif() {
 // mencari jumlah kriteria
 function getJumlahKriteria() {
 	include('config.php');
-	$query  = "SELECT count(*) FROM kriteria";
+	$query  = "SELECT count(*) FROM kriteria WHERE id > 34";
 	$result = mysqli_query($koneksi, $query);
 	while ($row = mysqli_fetch_array($result)) {
 		$jmlData = $row[0];
@@ -380,7 +380,7 @@ function showTabelPerbandingan($jenis,$kriteria) {
 		$n = getJumlahAlternatif();
 	}
 
-	$query = "SELECT nama FROM $kriteria ORDER BY id";
+	$query = "SELECT nama FROM $kriteria WHERE id > 34 ORDER BY id";
 	$result	= mysqli_query($koneksi, $query);
 	if (!$result) {
 		echo "Error koneksi database!!!";
