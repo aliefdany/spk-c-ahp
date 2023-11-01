@@ -1,7 +1,7 @@
 <?php
 	$koneksi = mysqli_init();
 	$koneksi->ssl_set(NULL, NULL, "/etc/ssl/certs/ca-certificates.crt", NULL, NULL);
-	$koneksi->real_connect("aws.connect.psdb.cloud", "piso5jah08z4je5u8xg0", "pscale_pw_6fgJNzP76qDzr5wt9wDK4GyFJqxemYxA9KeIPYH7Gnk", "ahp");
+	$koneksi->real_connect("aws.connect.psdb.cloud", "zlnm6pskkpyusc7rvoth", "pscale_pw_CX780klkZxrF6kkalLUNRb78HmJc33psOdBmrkva6rT", "ahp");
 	// $mysqli->close();
 
 	if (!$koneksi)
