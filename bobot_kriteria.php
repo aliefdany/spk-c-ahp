@@ -1,3 +1,6 @@
+<head>
+	<title>SPK Qopee | Perbandingan Kriteria</title>
+</head>
 <?php
 	include('config.php');
 	include('fungsi.php');

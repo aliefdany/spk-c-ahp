@@ -1,5 +1,6 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+	<title>SPK Qopee | Kriteria</title>
 </head>
 <?php 
 	include('config.php');

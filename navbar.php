@@ -14,7 +14,7 @@
 </head>
 <body>
   <nav>
-    <div class="logo">Kasep Source_Code</div>
+    <div class="logo">Spk Qopee Yes</div>
     <script>
       function drpdn(){
         document.getElementById("custom").classList.toggle('custom-dd-show');
